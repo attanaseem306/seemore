@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main2 {
+            align-items: center;
+        }
+
+        .h {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: rgb(248, 248, 252);
+            text-transform: uppercase;
+            background-color: rgb(0, 38, 255);
+            border-radius: 20px;
+            border: 2px solid rgb(21, 21, 21);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 90%;
+            margin: auto;
+            padding: auto;
+            height: 70px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+
+        #hide {
+            display: none;
+        }
+        .pa{
+            width: 90%;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(71, 76, 214);
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 25px;
+            color: white;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            word-spacing: 6px;
+        }
+        #btn{
+            float: right;
+            padding: 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            border-radius: 7px;
+            border: none;
+            border: 2px solid blue;
+            background-color: aqua;
+            color: rgb(19, 23, 237);
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+        #btn:hover{
+            background-color: rgb(92, 225, 92);
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main2">
+            <div class="h">
+                <h1 id="heading"> HIDE </h1>
+            </div>
+            <div class="pa">
+                <p id="para1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deleniti inventore itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet fugit aliquam modi deleniti, dolorum pariatur repudiandae? Fugit dolor ut esse eligendi suscipit voluptatem aliquam voluptatibus, expedita modi similique beatae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae velit magnam atque minus itaque sed repellat, quas ad tenetur placeat deleniti quisquam laboriosam quia, dolores nam at quos. Quibusdam?
+                    aperiam odit ratione, dolor explicabo tenetur sit neque nisi temporibus architecto iste odio
+                    repellat obcaecati, ad consectetur eveniet?<span id="dot">....</span><span id="hide">doloremque!
+                        Laboriosam qui quas fugit magnam officia minus facere magni porro illo labore, ipsa alias suntlo Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores reiciendis illo molestias unde quaerat totam error. Quasi quibusdam iste ratione, necessitatibus autem fugit quae excepturi magnam quod eos nam adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur omnis provident officiis autem unde libero voluptates voluptatum cumque quam fuga dolorem rem recusandae impedit dignissimos, pariatur et earum atque. dolor sit amet consectetur adipisicing elit. Impedit dolores amet odio magnam mollitia nesciunt sit ratione obcaecati id minima doloribus Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa! Illo dolor impedit minima aliquam nobis provident amet quod minus consectetur natus, et culpa eaque non animi. Quo, excepturi quia? sapiente deserunt, voluptates similique ipsam, iure autem sequi corrupti.
+                        nobis dolores.</span>
+                </p>
+            </div>
+            <button id="btn" onclick="moreless()">Read more</button>
+        
+        </div>
+    </div>
+    <script>
+        function moreless() {
+            var dots = document.getElementById("dot");
+            var hidetext = document.getElementById("hide");
+            var buttontext = document.getElementById("btn");
+            var takeHeading = document.getElementById("heading");
+
+
+            if(dots.style.display!=="none"){
+                dots.style.display="none"
+                hidetext.style.display="inline"
+                buttontext.innerHTML="Read less"
+                takeHeading.innerHTML="Show"
+            }
+
+            else{
+                dots.style.display="inline"
+                hidetext.style.display="none"
+                buttontext.innerHTML="Read more"
+                takeHeading.innerHTML="HIDE"
+            }
+            
+
+            // if (dots.style.display != "none") {
+            //     dots.style.display = "none";
+            //     hidetext.style.display = "inline";
+            //     buttontext.innerHTML = "Read less";
+            //     takeHeading.innerHTML = "SHOW"
+
+            // }
+
+            // else {
+            //     dots.style.display = "inline";
+            //     hidetext.style.display = "none";
+            //     buttontext.innerHTML = "Read more";
+            //     takeHeading.innerHTML = " HIDE"
+            // }
+        }
+    </script>
+</body>
+
+</html>
